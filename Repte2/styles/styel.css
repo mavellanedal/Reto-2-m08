@@ -1,0 +1,287 @@
+body{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0;
+}
+
+a{
+  text-decoration: none;
+  color: white;  
+  font-size: 21px;
+  text-transform: uppercase;
+}
+#header{
+    display: flex;
+    min-height:70px;
+    background-color: #000527;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    width: 100%;
+	left: 0; 
+	top: 0; 
+	position: fixed; 
+}
+
+.logo{
+    display: flex;
+}
+
+.logo img{
+    height: 50px;
+    margin-right: 15px;
+    margin-top: 8px;
+}
+
+nav
+{
+    display: flex;
+    padding-right: 8%;
+}
+
+nav a{
+    font-weight: 600;
+    padding-right: 10px;
+    padding: 10px;
+}
+
+nav a:hover{
+    animation: neonGlow 1s infinite alternate cubic-bezier(.455,.03,.515,.955);
+}
+
+@keyframes neonGlow {
+    0% {
+        text-shadow: 0 0 10px rgba(255,255,255,.8),0 0 20px rgba(255,255,255,.8),0 0 22px rgba(255,255,255,.8),0 0 40px rgba(66,220,219,.8),0 0 60px rgba(66,220,219,.8),0 0 80px rgba(66,220,219,.5),0 0 100px rgba(66,220,219,.5),0 0 140px rgba(66,220,219,.5),0 0 200px rgba(66,220,219,.5)
+    }
+
+    to {
+        text-shadow: 0 0 2px rgba(255,255,255,.8),0 0 8px rgba(255,255,255,.8),0 0 10px rgba(255,255,255,.8),0 0 20px rgba(66,220,219,.8),0 0 30px rgba(66,220,219,.8),0 0 40px rgba(66,220,219,.8),0 0 50px rgba(66,220,219,.5),0 0 80px rgba(66,220,219,.5)
+    }
+}
+
+
+ul, ol{
+    list-style: none;
+    text-decoration: none;
+}
+
+li{
+    text-decoration: none;
+    list-style: none;
+}
+
+.desplegable li a{
+    text-decoration: none;
+    display:block;
+    background-color: #000527;
+    
+}
+
+ul.desplegable{
+    padding-inline-start: 0px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+.desplegable li a:hover{
+    animation: neonGlow 1s infinite alternate cubic-bezier(.455,.03,.515,.955);
+}
+
+.desplegable > li{
+    float: left;
+}
+
+.desplegable li ul{
+    display:none;
+    position:absolute;
+    min-width: 140px;
+}
+
+.desplegable li:hover > ul{
+    display:block;
+    padding-left: 0;
+    /*background-color: yellow;*/
+}
+
+li:hover > .submenu{
+    display:block;
+}
+
+.escudo-header {
+    padding-right: 20px;
+}
+
+#titulo {
+    display: grid;
+    place-content: center;
+    font-size: xx-large;
+    color: #E6E6E9;
+    background-color: #0D1436; 
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+#titulo > h1{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+
+.principal {
+    color: #E6E6E9;
+    background-color: #2E41A8;
+    margin-top: 0px;
+}
+.principal > header { 
+    font-size: x-large; 
+    text-align: center;
+}
+
+.subtitle-artistas {
+    margin-top: 0px;
+    padding-top: 15px;
+}
+
+.todos-artistas {
+    display:flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 700px;
+    padding-left: 395px;
+    padding-bottom: 50px;
+}
+
+.artistas{
+    border: 5px solid #0F7173;
+    height: 275px;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.grupos {
+    border: 5px solid #2E41A8;
+    height: 275px;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.FotoArtista {
+    padding-top: 10px;
+}
+
+.acronimo{
+    font-size: 30px;
+    padding-right: 15px;
+}
+
+.nombre {
+    font-size: 20px;
+}
+
+.estilo {
+    font-size: 15px;
+}
+
+.estilo h5 {
+    padding-right: 5px;
+}
+
+.col-artistas {
+    display: flex;
+    justify-content: center; 
+
+}
+
+.contenido {
+    display: flex;
+    margin-top: 10px;
+}
+
+.cont-derecha {
+    flex-direction: column;
+}
+
+.header-subtitle { 
+    font-size: x-large; 
+    text-align: center;
+    background-color: #0F7173;
+}
+
+.subtitle {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+.todos-grupos {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    background-color: #0F7173;
+    padding-bottom: 50px;
+}
+
+.main-footer {
+    color: #E6E6E9;
+    font-size: 15px;
+    background-color: #0D1436;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 70%;
+    padding-top: 30px;
+    padding: 30px;
+    padding-left: 30px;
+}
+
+.logos-footer {
+    padding-top: 15px;
+}
+
+.tabla {
+    padding-top: 100px;
+    padding-bottom: 75px;
+    display: flex;
+    justify-self: center;
+    align-items: center;
+    height: auto;
+    width: auto;
+    color: white;
+    background-color: #2E41A8;
+}
+
+.tabla-conciertos { 
+    table-layout: fixed;
+    width: 100%;
+    height: 200px;
+    text-align: center;
+}
+th {
+    font-size: 30px;
+    border: 4px solid #0D1436;
+    background-color: #0F7173;
+}
+
+td {
+    background-color: #0D1436;
+    border: solid 4px #0F7173;
+    font-size: 20px;
+}
+
+iframe {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.videos {
+    color: #E6E6E9;
+    background-color: #2E41A8;
+    margin-top: 0px;
+    text-align: center;
+}
