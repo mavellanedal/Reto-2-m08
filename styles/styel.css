@@ -246,7 +246,7 @@ li:hover > .submenu{
 
 .tabla {
     padding-top: 100px;
-    padding-bottom: 75px;
+    padding-bottom: 98px;
     display: flex;
     justify-self: center;
     align-items: center;
@@ -264,13 +264,13 @@ li:hover > .submenu{
 }
 th {
     font-size: 30px;
-    border: 4px solid #0D1436;
+    border: 2px solid #0D1436;
     background-color: #0F7173;
 }
 
 td {
     background-color: #0D1436;
-    border: solid 4px #0F7173;
+    border: solid 2px #0F7173;
     font-size: 20px;
 }
 
