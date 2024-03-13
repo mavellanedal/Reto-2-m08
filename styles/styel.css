@@ -248,12 +248,20 @@ li:hover > .submenu{
     padding-top: 100px;
     padding-bottom: 98px;
     display: flex;
-    justify-self: center;
+    justify-content: center;
     align-items: center;
     height: auto;
     width: auto;
     color: white;
     background-color: #2E41A8;
+}
+
+.nom-artista, .fecha, .sitio {
+    font-size: 20px;
+}
+
+.ti-tabla {
+    text-transform: uppercase;
 }
 
 .tabla-conciertos { 
@@ -271,7 +279,6 @@ th {
 td {
     background-color: #0D1436;
     border: solid 2px #0F7173;
-    font-size: 20px;
 }
 
 iframe {
@@ -284,4 +291,29 @@ iframe {
     background-color: #2E41A8;
     margin-top: 0px;
     text-align: center;
+}
+
+
+.documentacion {
+    padding-top: 0px;
+    margin-top:509px;
+}
+
+.imagen-tablas {
+    width: 500;  
+    height: auto; 
+    padding: 10px; 
+}
+nombres-tabla {
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.list-item {
+    padding-bottom: 28px;
+    font-size: 30px;
+}
+
+.list-item:hover {
+    scale: 1.5;
 }
